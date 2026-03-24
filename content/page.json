@@ -1,6 +1,6 @@
 {
   "want_more": {
-    "heading": "Stay in the Room",
+    "heading": "Be Part of It",
     "collaboration": "Collaboration throughout the process. This was number one by a wide margin. Creatives want strategists in the room during ideation. Available for questions. Present at reviews. The \"hand off the brief and disappear\" model is the structural complaint underneath most of the surface-level frustrations in this data.",
     "boldness": "Boldness. Take a position. Have an opinion. Put something on the line. A lot of respondents described strategists as risk-averse. Safe briefs. Safe insights. Safe territories. \"Take big swings\" showed up more than once. Nobody wants to farm, everyone wants to hunt.",
     "simplification": "Simplification. This one came up in response to almost every question. Shorter briefs. Fewer slides. One page. One insight. A strategy can be one word. It does not have to be 15 slides.",
@@ -10,8 +10,8 @@
   "feedback": {
     "heading": "What Works and What Doesn't",
     "least_heading": "The Least Helpful Feedback",
-    "least_1": "\"I don't like it.\" Runaway winner. Cited in dozens of variations. \"I don't feel it.\" \"It's not there yet.\" \"I'll know it when I see it.\" \nPersonal opinion disconnected from strategy is treated as illegitimate feedback. \n\nRight behind it: \"it's off-brief\" with zero explanation, and any attempt to art direct or prescribe execution.",
-    "least_2": "There's a telling sub-pattern here too. Creatives resent \"the client won't like this\" as feedback. They read it as surrender before the fight starts. If the work answers the brief, your job is to figure out how to sell it. If you're predicting death before the pitch, what are you even doing here?",
+    "least_1": "\"I don't like it.\"  Mentioned in dozens of variations. \"I don't feel it.\" \"It's not there yet.\" \"I'll know it when I see it.\" \n\nPersonal opinion disconnected from strategy is treated as illegitimate feedback. \n\nRight behind it: \"it's off-brief\" with zero explanation, and any attempt to art direct or prescribe execution.",
+    "least_2": "Creatives resent \"the client won't like this\" as feedback. They read it as surrender before the fight starts. If the work answers the brief, your job is to figure out how to sell it. If you're predicting death before the pitch, what are you even doing here?",
     "most_heading": "The Most Helpful Feedback",
     "most_body": "Root it in the strategy and the audience. Ask questions instead of making declarations. \"How does this make the brand more relevant to our audience?\" Name what's working. Name what needs to change. Explain why. \"Yes, and\" came up a bunch. If it's just an opinion then it's just another opinion. And everyone has one of those.",
     "quote": "If it's just an opinion then it's just another opinion."
@@ -19,7 +19,7 @@
   "frustrations": {
     "heading": "The Frustration Hierarchy",
     "tier1_title": "Overproduction",
-    "tier2_title": "Scope Creep Into Creative Territory",
+    "tier2_title": "Straying from our lane",
     "tier3_title": "Jargon and Abstraction",
     "tier4_title": "Rigidity",
     "intro": "Clear tiers. Sorted by how often they came up. ",
@@ -289,7 +289,7 @@
   "brief": {
     "heading": "A brief provokes and constrains ",
     "missing_heading": "What Briefs Are Missing",
-    "judging_body": "It's binary. Either you start having ideas while reading it or you don't. Length is a bad sign. Jargon is a bad sign. Surprise is a good one. The markers of a strong brief: short, focused, contains something the team would never have found on their own, and makes you feel something. Energy. Discomfort. Excitement. If you feel nothing, it's a document, and documents don't make ads.",
+    "judging_body": "Length is a bad sign. Jargon is a bad sign. \nSurprise is a good one. \n\nThe markers of a strong brief: short, focused, contains something the team would never have found on their own, and makes you feel something. \n\nEnergy. Discomfort. Excitement. If you feel nothing, it's a just document.",
     "body_1": "Answers on what a brief should do clustered around three things: inspire (spark ideas), constrain (define the territory), and align (get everyone pointed the same way). The best responses did all three at once. A brief should provoke thinking while narrowing the field. If it only does one, it's half a brief.",
     "body_2": "The test that kept coming up: ideas should start forming while you read it. If a brief is strategically correct but creatively inert, it failed. \n\nYou can be right and still be useless.",
     "judging_heading": "How Creatives Judge a Brief",
@@ -305,8 +305,8 @@
   },
   "setup": {
     "heading": "The Survey",
-    "body_1": "This has been an on going survey, open in one capacity or another since 2018. It started with me sending it to CDs I has worked with directly who's opinion I valued. But I opened it up from there as I got eager for some statistical validity. ",
-    "body_2": "I kept it to Directors and above on purpose. Of the people who reported experience level, 57% had 10+ years working with strategists. I was hoping for 100% but titles are often inflated and people aren't great at listening. "
+    "body_1": "This has been an ongoing survey, open for responses in one capacity or another since 2018. It started with me sending it to CDs I worked with directly, who's opinion I valued. But I opened it up from there as I got eager for some statistical validity. ",
+    "body_2": "I kept it to Directors and above on purpose. Of the people who reported experience level, 57% had 10+ years working with strategists. I was hoping for 100% but titles don't always equate to experience and people aren't great at listening. "
   },
   "purpose": {
     "heading": "We are map and the translator.",
