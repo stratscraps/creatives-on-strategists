@@ -276,8 +276,8 @@
   },
   "headline": {
     "heading": "The underlaying theme...",
-    "body_1": "strategists are making stuff that serves the strategy process or the strategist themselves when they should be making stuff that serves the creative process.",
-    "body_2": "We optimize our work for ourselves or for clients. We should be optimizing for creatives; the people who strategy is meant to serve. ",
+    "body_1": "Strategists are making stuff that serves the strategy process when they should be making stuff that serves the creative process.",
+    "body_2": "We optimize our work for ourselves or for clients. ",
     "body_3": "What does that look like? Docs with too much information. Showing the work rather than the answer. Not bringing a real point of view. Disappearing after the brief. Evaluating work rather than doing our part to help build it. "
   },
   "after_brief": {
@@ -309,12 +309,12 @@
     "body_2": "I kept it to Directors and above on purpose. Of the people who reported experience level, 57% had 10+ years working with strategists. I was hoping for 100% but titles are often inflated and people aren't great at listening. "
   },
   "purpose": {
-    "heading": "Find It, Point at It, Get Out of the Way",
+    "heading": "We are map and the translator.",
     "body_1": "When you ask creatives what strategy is for, they reach for spatial metaphors. Map-making. Planting a flag. Pointing to where the treasure is buried. Defining the field of play. Strategy sets the canvas. Creative paints it.",
     "body_2": "There's a secondary frame too: strategy as a translation layer. Someone who converts a business problem into a creative problem. \"Bridge the commercial and creative.\" \"Turn the client's business problem into a simple and clear creative brief.\"",
-    "body_3": "But here's where it gets interesting. When strategists answered this same question, they talked about effectiveness. Business outcomes. Competitive advantage. Creatives talked about inspiration, direction, and constraints. Both sides are describing the same job and they're using different definitions of what they're building together. Maybe thats because we talk to each other rathner than to our creative teams.  ",
-    "quote_1": "To create a space that makes innovative thinking inevitable.",
-    "quote_2": "Clear choices that guide execution and inspire executioners.",
-    "quote_3": "Plant the flag in the ground so the creative teams know where to dig for gold."
+    "body_3": "But here's the problem. When strategists answered this same question, they talked about effectiveness. Business outcomes. Competitive advantage. Creatives talked about inspiration, direction, and constraints. Both sides are describing the same job and they're using different definitions of what they're building together. Maybe thats because we talk to each other rathner than to our creative teams.  ",
+    "quote_1": "To define the problem that needs solving; bringing clarity to the category and the problem at hand.",
+    "quote_2": "Clarify and define the path forward for the work, define the canvas but don't paint it",
+    "quote_3": "Translate client problems into inspiration that inspires, helps guide and narrows creative thinking"
   }
 }
