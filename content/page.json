@@ -1,53 +1,4 @@
 {
-  "hero": {
-    "title": "Creatives on Strategists",
-    "subtitle": "I asked 106 agency people how strategy actually works inside their buildings. Mostly creatives. Some strategists. One account person who wandered in. Here's what came back.",
-    "survey_url": "https://survey.typeform.com/to/FYLuWVT6"
-  },
-  "setup": {
-    "heading": "The Survey",
-    "body_1": "Two waves. First one ran April through July 2023 on Google Forms. 61 responses. Second wave ran October 2023 through September 2024 on Typeform. 45 more. I tossed about 100 Typeform submissions that were just a name and role with zero answers, and removed duplicates between the two.",
-    "body_2": "90 creatives. 14 strategists. One account person. Of the people who reported experience level, 57% had 10+ years working with strategists. These are seasoned people. When they say something is broken, it's because they've watched it break for a decade."
-  },
-  "headline": {
-    "heading": "One Problem Underneath Everything",
-    "body_1": "Five themes kept showing up no matter which question I looked at. They all reinforce each other. And they all point back to one thing: strategists are making stuff that serves the strategy process, when they should be making stuff that serves the creative process.",
-    "body_2": "We optimize our outputs for ourselves (the people who make them) or for clients (the people who buy them). We should be optimizing for creatives (the people who actually use them).",
-    "body_3": "Shorter docs. A real point of view. Show up during creative development instead of disappearing after the brief. Stop being territorial about ideas. Give feedback that builds something instead of just evaluating it."
-  },
-  "purpose": {
-    "heading": "Find It, Point at It, Get Out of the Way",
-    "body_1": "When you ask creatives what strategy is for, they reach for spatial metaphors. Map-making. Planting a flag. Pointing to where the treasure is buried. Defining the field of play. Strategy sets the canvas. Creative paints it.",
-    "body_2": "There's a secondary frame too: strategy as a translation layer. Someone who converts a business problem into a creative problem. \"Bridge the commercial and creative.\" \"Turn the client's business problem into a simple and clear creative brief.\"",
-    "body_3": "But here's where it gets interesting. When strategists answered this same question, they talked about effectiveness. Business outcomes. Competitive advantage. Creatives talked about inspiration, direction, and constraints. Both sides are describing the same job and they're using different definitions of what they're building together. That gap is the root of almost everything else in this survey.",
-    "quote_1": "To create a space that makes innovative thinking inevitable.",
-    "quote_2": "Clear choices that guide execution and inspire executioners.",
-    "quote_3": "Plant the flag in the ground so the creative teams know where to dig for gold."
-  },
-  "brief": {
-    "heading": "The Brief Is the First Piece of Creative Work",
-    "body_1": "Answers on what a brief should do clustered around three things: inspire (spark ideas), constrain (define the territory), and align (get everyone pointed the same way). The best responses did all three at once. A brief should provoke thinking while narrowing the field. If it only does one, it's half a brief.",
-    "body_2": "The test that kept coming up: ideas should start forming while you read it. If a brief is strategically correct but creatively inert, it failed. You can be right and still be useless.",
-    "missing_heading": "What Briefs Are Missing",
-    "missing_1": "A point of view. Take a position. Make the leap from data to decision. When strategists just lay out the facts and leave interpretation to the creative team, the creative team ends up doing the strategy work for you.",
-    "missing_2": "Human behavior. The real stuff. Demographics show up plenty. The weird, specific, true things about how people actually live? Those are rare. Tell me about the person, stop telling me about the consumer.",
-    "missing_3": "Client context. What the client expects. What has already failed. What internal politics are going to shape the approval process. Creatives want to know the game they're playing, including the rules nobody writes down.",
-    "missing_4": "One thing. A single most important thing. Briefs that present three strategic directions and let the creative team choose between them get read as indecision disguised as openness.",
-    "judging_heading": "How Creatives Judge a Brief",
-    "judging_body": "It's binary. Either you start having ideas while reading it or you don't. Length is a bad sign. Jargon is a bad sign. Surprise is a good one. The markers of a strong brief: short, focused, contains something the team would never have found on their own, and makes you feel something. Energy. Discomfort. Excitement. If you feel nothing, it's a document, and documents don't make ads."
-  },
-  "frustrations": {
-    "heading": "The Frustration Hierarchy",
-    "intro": "Clear tiers. Sorted by how often they came up. Consistent across both waves, across experience levels, across roles.",
-    "tier1_title": "Overproduction",
-    "tier1_body": "The long deck. The data dump. This was cited more than anything else in the entire survey. \"50 slides when 5 will do.\" \"Too many words.\" My favorite framing: strategists are \"pretending to be productive while leaving it to the creative team to connect the dots.\"",
-    "tier2_title": "Scope Creep Into Creative Territory",
-    "tier2_body": "\"Thought-starters.\" Second most cited. And the complaint is specific: strategists who write creative platforms that are actually campaign ideas. Who write strategy lines that are really taglines. Who provide references that narrow the space instead of opening it. The line between \"inspiring direction\" and \"doing my job for me\" is the most contested boundary in this whole survey.",
-    "tier3_title": "Jargon and Abstraction",
-    "tier3_body": "Marketing-speak. Acronyms. \"Big words because you don't have concise ones.\" Creatives read jargon as a tell that the thinking underneath is unclear. As one person put it, jargon in any field \"is intended to dismay others from analyzing the work.\" That's a bar.",
-    "tier4_title": "Rigidity",
-    "tier4_body": "Strategists who treat the brief like it's carved in stone. The creative process evolves strategy. It just does. The ask: be prepared to concept together, or embrace total departure when a better idea shows up from a direction you didn't plan for."
-  },
   "want_more": {
     "heading": "Stay in the Room",
     "collaboration": "Collaboration throughout the process. This was number one by a wide margin. Creatives want strategists in the room during ideation. Available for questions. Present at reviews. The \"hand off the brief and disappear\" model is the structural complaint underneath most of the surface-level frustrations in this data.",
@@ -57,64 +8,313 @@
     "advocacy": "Advocacy for the work. Help make brave ideas feel safe to buy. One respondent put it perfectly: \"Provide clarity and confidence. Being a creative is scary business. Good ideas are risky. Great strategy wraps brave ideas in insulated armor.\""
   },
   "feedback": {
-    "heading": "What Works and What Gets You Fired From the Room",
+    "heading": "What Works and What Doesn't",
     "least_heading": "The Least Helpful Feedback",
-    "least_1": "\"I don't like it.\" Runaway winner. Cited in dozens of variations. \"I don't feel it.\" \"It's not there yet.\" \"I'll know it when I see it.\" Personal opinion disconnected from strategy is treated as illegitimate feedback. Right behind it: \"it's off-brief\" with zero explanation, and any attempt to art direct or prescribe execution.",
-    "least_2": "There's a telling sub-pattern here too. Creatives resent \"the client won't like this\" as feedback. They read it as surrender before the fight starts. If the work answers the brief, your job is to figure out how to sell it. If you're predicting death before the pitch, what are you even doing there?",
+    "least_1": "\"I don't like it.\" Runaway winner. Cited in dozens of variations. \"I don't feel it.\" \"It's not there yet.\" \"I'll know it when I see it.\" \nPersonal opinion disconnected from strategy is treated as illegitimate feedback. \n\nRight behind it: \"it's off-brief\" with zero explanation, and any attempt to art direct or prescribe execution.",
+    "least_2": "There's a telling sub-pattern here too. Creatives resent \"the client won't like this\" as feedback. They read it as surrender before the fight starts. If the work answers the brief, your job is to figure out how to sell it. If you're predicting death before the pitch, what are you even doing here?",
     "most_heading": "The Most Helpful Feedback",
     "most_body": "Root it in the strategy and the audience. Ask questions instead of making declarations. \"How does this make the brand more relevant to our audience?\" Name what's working. Name what needs to change. Explain why. \"Yes, and\" came up a bunch. If it's just an opinion then it's just another opinion. And everyone has one of those.",
     "quote": "If it's just an opinion then it's just another opinion."
   },
-  "after_brief": {
-    "heading": "Your Job Is Not Done When the Brief Is Presented",
-    "body_1": "Most people want the strategist to stick around as a sounding board. A sense-checker. Someone who keeps the work honest to the strategy without controlling execution. A smaller group just wants you to get out of the way.",
-    "body_2": "The reconciliation between those two camps is pretty simple: stay available, stay invested, but earn your seat by being useful. If you're just supervising, you're in the way. If you're building, you're welcome. \"Be flexible. If a new idea beats the brief, help us sell the pivot.\"",
-    "body_3": "The strongest framing in the entire dataset, and the one I keep coming back to: the strategist's job after the brief is to build the case that helps sell the creative work to clients. That's it. That's the gig after the gig."
+  "frustrations": {
+    "heading": "The Frustration Hierarchy",
+    "tier1_title": "Overproduction",
+    "tier2_title": "Scope Creep Into Creative Territory",
+    "tier3_title": "Jargon and Abstraction",
+    "tier4_title": "Rigidity",
+    "intro": "Clear tiers. Sorted by how often they came up. Consistent across both waves, across experience levels, across roles.",
+    "tier4_body": "Strategists who treat the brief like it's carved in stone. The creative process evolves strategy. It just does. The ask: be prepared to concept together, or embrace total departure when a better idea shows up from a direction you didn't plan for.",
+    "tier3_body": "Marketing-speak. Acronyms. \"Big words because you don't have concise ones.\" Creatives read jargon as a tell that the thinking underneath is unclear. As one person put it, jargon in any field \"is intended to dismay others from analyzing the work.\" That's a bar.",
+    "tier2_body": "\"Thought-starters.\" Second most cited. And the complaint is specific: strategists who write creative platforms that are actually campaign ideas. Who write strategy lines that are really taglines. Who provide references that narrow the space instead of opening it. The line between \"inspiring direction\" and \"doing my job for me\" is the most contested boundary in this whole survey.",
+    "tier1_body": "The long deck. The data dump. This was cited more than anything else in the entire survey. \"50 slides when 5 will do.\" \"Too many words.\" My favorite framing: strategists are \"pretending to be productive while leaving it to the creative team to connect the dots.\""
   },
   "blind_spots": {
     "heading": "What Strategists Never Think About",
-    "time": "Time. Strategy phases eat creative timelines. Three weeks for strategy, one week for creative. Creative absorbs the schedule compression and nobody talks about it.",
+    "time": "Time. Strategy phases eat creative timelines.  Creative absorbs the schedule compression and resents us for it. ",
     "executability": "Executability. Strategists think about the \"what\" without thinking about whether it can actually be made. Production logistics. Media realities. The limitations of the territory they just defined. Problems don't start where they first appear.",
     "politics": "Client politics. The career objectives, political dynamics, and risk tolerance of the actual humans who will approve or kill the work. Understanding the audience for the pitch is as important as understanding the audience for the ad. If you understand the true motivations and fears of every stakeholder, you can begin to see where things will come apart.",
     "people": "Real people. \"Consumers\" is an abstraction. \"People\" are actual humans with messy, irrational lives. \"Think like people, not like brands.\"",
-    "service": "That strategy is a service function. A blunt minority reminded me that strategy exists to enable the creative product. It has no standalone value in an agency. \"The best strategy is useless when it doesn't lead to artwork, ads, spots, texts that you can actually use out there.\" We are a value add. We don't make the thing. We make the thing better than it would have been otherwise."
-  },
-  "paradox": {
-    "heading": "Hold Two Things at Once",
-    "body_1": "There's a genuine paradox in this data and I think it's worth sitting with. Creatives want strategists to take a strong position. But also to stay flexible when creative thinking evolves the strategy. They want deep involvement. But they want you out of creative territory. They want briefs that constrain. But that also liberate.",
-    "body_2": "Managing those tensions is the actual job description. And the respondents who seemed to understand that were the most experienced ones, and the most generous in how they talked about us.",
-    "takeaway_1": "The brief is a creative product. Judge it by whether it makes people want to make things. If ideas don't start forming while someone reads it, rewrite it.",
-    "takeaway_2": "Your job keeps going after the briefing. Stay in the room. Build the case for the work. Help sell what creatives make. Strategy is only worth it if we fight for the best work possible. Otherwise why are we there?",
-    "takeaway_3": "Say less. Mean more. One insight on one page will always outperform fifty slides of context. A strategy can be one word. It does not have to be a deck."
+    "service": "That strategy is a service function. A blunt minority reminded me that strategy exists to enable the creative product. \"The best strategy is useless when it doesn't lead to concepts that you can actually use out there.\" We are a value add. We don't make the thing. We make the thing better than it would have been otherwise."
   },
   "anonymous": {
     "heading": "What People Say When You Promise Anonymity",
     "intro": "82 people left anonymous messages for strategists. Three currents run through them: genuine respect paired with genuine frustration, the ego problem (a lot of people think we think we're the smartest in the room), and the accusation that some of us are just frustrated creatives using strategy as a side door. Here are some of them.",
     "messages": [
-      {"text": "You need us more than we need you. Sorry. Not sorry.", "highlight": true},
-      {"text": "There's a reason a strong strategy department is a hidden ingredient to the best, most creative agencies in the world.", "highlight": false},
-      {"text": "IF YOU WANT TO BE CREATIVE DIRECTORS THEN BE JUNIOR CREATIVES FIRST AND WORK YOUR WAY UP.", "highlight": true},
-      {"text": "Strategists make me feel more confident about the ideas. Even easier and better when we get there together.", "highlight": false},
-      {"text": "Strategy is a job function. It's like being a plumber. It's not a demarcation of your intelligence.", "highlight": false},
-      {"text": "Fuck PowerPoint.", "highlight": true},
-      {"text": "Be less interested in being smart, and more interested in helping others get to great work.", "highlight": false},
-      {"text": "This is Chicago, we don't care if you're from NY/LA. The more you mention it, the more of an asshole you sound like.", "highlight": false},
-      {"text": "We're better together! The best work I have been involved with comes from great conversation and empathy.", "highlight": false},
-      {"text": "You're not the smartest in the room, and that's ok.", "highlight": true},
-      {"text": "stop trying to be a creative. stop trying to impose your thinking on the work. stop judging the work against the brief, start judging it against the world.", "highlight": false},
-      {"text": "When you all do your job well it makes ours so so much easier.", "highlight": false},
-      {"text": "calm your ego", "highlight": false},
-      {"text": "the best work arrives when the strategist behaves creatively, and the creative behaves strategically.", "highlight": false},
-      {"text": "A strategy can be one word. It doesn't have to be 15 slides.", "highlight": true},
-      {"text": "You're really important. Maybe the most important. So work with us and we'll do your thinking proud.", "highlight": false},
-      {"text": "Advertising is grimy and gritty; too much strategy is 'in the head.' Don't be too smart for your own good.", "highlight": false},
-      {"text": "We already have a creative boss, thanks.", "highlight": false},
-      {"text": "Your job is not done when the brief is presented, your job is also not to punch holes in the creative.", "highlight": false},
-      {"text": "I don't care how good you are at your job as long as you have a good attitude and you're down to problem solve.", "highlight": false},
-      {"text": "read stratscraps", "highlight": true},
-      {"text": "Thank you. I love you.", "highlight": false},
-      {"text": "You're not the fucking boss. We're a team.", "highlight": false},
-      {"text": "chill with the jargon, it makes y'all look stupid", "highlight": false}
+      {
+        "text": "You need us more than we need you. Sorry. Not sorry.",
+        "highlight": true
+      },
+      {
+        "text": "There's a reason a strong strategy department is a hidden ingredient to the best, most creative agencies in the world.",
+        "highlight": false
+      },
+      {
+        "text": "IF YOU WANT TO BE CREATIVE DIRECTORS THEN BE JUNIOR CREATIVES FIRST AND WORK YOUR WAY UP.",
+        "highlight": true
+      },
+      {
+        "text": "Strategists make me feel more confident about the ideas. Even easier and better when we get there together.",
+        "highlight": false
+      },
+      {
+        "text": "Strategy is a job function. It's like being a plumber. It's not a demarcation of your intelligence.",
+        "highlight": false
+      },
+      {
+        "text": "Fuck PowerPoint.",
+        "highlight": true
+      },
+      {
+        "text": "Be less interested in being smart, and more interested in helping others get to great work.",
+        "highlight": false
+      },
+      {
+        "text": "This is Chicago, we don't care if you're from NY/LA. The more you mention it, the more of an asshole you sound like.",
+        "highlight": false
+      },
+      {
+        "text": "We're better together! The best work I have been involved with comes from great conversation and empathy.",
+        "highlight": false
+      },
+      {
+        "text": "You're not the smartest in the room, and that's ok.",
+        "highlight": true
+      },
+      {
+        "text": "stop trying to be a creative. stop trying to impose your thinking on the work. stop judging the work against the brief, start judging it against the world.",
+        "highlight": false
+      },
+      {
+        "text": "When you all do your job well it makes ours so so much easier.",
+        "highlight": false
+      },
+      {
+        "text": "calm your ego",
+        "highlight": false
+      },
+      {
+        "text": "the best work arrives when the strategist behaves creatively, and the creative behaves strategically.",
+        "highlight": false
+      },
+      {
+        "text": "A strategy can be one word. It doesn't have to be 15 slides.",
+        "highlight": true
+      },
+      {
+        "text": "You're really important. Maybe the most important. So work with us and we'll do your thinking proud.",
+        "highlight": false
+      },
+      {
+        "text": "Advertising is grimy and gritty; too much strategy is 'in the head.' Don't be too smart for your own good.",
+        "highlight": false
+      },
+      {
+        "text": "We already have a creative boss, thanks.",
+        "highlight": false
+      },
+      {
+        "text": "Your job is not done when the brief is presented, your job is also not to punch holes in the creative.",
+        "highlight": false
+      },
+      {
+        "text": "I don't care how good you are at your job as long as you have a good attitude and you're down to problem solve.",
+        "highlight": false
+      },
+      {
+        "text": "read stratscraps",
+        "highlight": true
+      },
+      {
+        "text": "Thank you. I love you.",
+        "highlight": false
+      },
+      {
+        "text": "You're not the fucking boss. We're a team.",
+        "highlight": false
+      },
+      {
+        "text": "chill with the jargon, it makes y'all look stupid",
+        "highlight": false
+      },
+      {
+        "highlight": false,
+        "text": "You need to realize that academics that obsess over planning/strategy (there a couple planner bros that are the leading voices in the field) are a bit disconnected from reality right now and haven't been doing the actual work in a while. They want you to obsess over being a strategist and frameworks and planner struggles etc because then they can build their community and sell courses etc. You should obsess over creativity and spend more time hanging out with creatives than you do other strategists."
+      },
+      {
+        "highlight": false,
+        "text": "The clients talk to strategists of various stripes all day, every day. They don't always know what your work is or why they're paying for it when they believe they've already supplied us with business objectives, positioning, and consulting strategy work. Help explain to them what strategy means in the creative context and how it builds on the services they've already paid for from other parties"
+      },
+      {
+        "highlight": false,
+        "text": "You are only as good as the people that can understand you"
+      },
+      {
+        "highlight": false,
+        "text": "Say more with less words"
+      },
+      {
+        "highlight": false,
+        "text": "Your job is not done when the brief is presented, your job is also not to punch holes in the creative. Work to continue to find ways to support creative."
+      },
+      {
+        "highlight": false,
+        "text": "The most annoying strategist I knew though of himself as a philosopher. He just spoke in long-winded vagueries about higher order ideas. Never gave concrete direction on anything. Don't be a twat like him."
+      },
+      {
+        "highlight": false,
+        "text": "Again, try to shut up once in a while"
+      },
+      {
+        "highlight": false,
+        "text": "We're on the same team. Working towards the same goal. If our idea doesn't align with your strategy its not because we weren't listening or didn't understand. It's because we have 400 people giving their opinion on everything down to the pixel size of our font. Gentle reminders are welcomed and context is always encouraged. Strategy to me, is one of the most interesting parts of the brief and unfortunately although its essentially the foundation of the work, it often gets buried. Doesn't mean its not appreciated. :)"
+      },
+      {
+        "highlight": false,
+        "text": "You’re in a creative role. Be creative with your view point."
+      },
+      {
+        "highlight": false,
+        "text": "Be less interested in being smart, and more interested in helping others get to great work. Nudge the creative if needed, don’t try to direct it. Be more accessible and available for chats with creatives."
+      },
+      {
+        "highlight": false,
+        "text": "We're better together! The best work I have been involved with comes from great conversation and empathy. Both our jobs have unique quirks and nuances that make us defensive or feel insecure, but if we're working together we'll be better. Great creative can come from a Strategist and great strategy can come from a Creative. Our industry pushes us into boxes and ways of working that are the opposite of being creative, but jumping a a cliff together is less scary and can be more exhilarating!"
+      },
+      {
+        "highlight": false,
+        "text": "Be less interested in being smart, and more interested in helping others get to great work. Nudge the creative if needed, don’t try to direct it. Be more accessible and available for chats with creatives."
+      },
+      {
+        "highlight": false,
+        "text": "Don't say or write more than you need to. A strategy can be one word. It doesn't have to be 15 sildes."
+      },
+      {
+        "highlight": false,
+        "text": "put yourself in the place of the human and not the consumer, understand his life and not his day of consumption, his real needs between family and not the marketing needs"
+      },
+      {
+        "highlight": false,
+        "text": "Just be insightful. Data is cool, but bring to the table those things that spark joy to you. It most likely will to ohers too."
+      },
+      {
+        "highlight": false,
+        "text": "the most effective briefs have. clear theme and direction when we open up too many avenues of exploration it's easy to get lost in witch path we're aiming to follow"
+      },
+      {
+        "highlight": false,
+        "text": "You do your job, I’ll do mine. "
+      },
+      {
+        "highlight": false,
+        "text": "sometimes you try to compete with us creatively "
+      },
+      {
+        "highlight": false,
+        "text": "We’re in this together. It’s not a competition. Let’s get pissed and laugh it off."
+      },
+      {
+        "highlight": true,
+        "text": "charts are awful. brainstorms are useless. there is too much focus on the \"inspirational\" language in a brief. Be clear."
+      },
+      {
+        "highlight": false,
+        "text": "Strategist sometimes think advertising is just research and slides and miss the fun of ideas and how they link to life."
+      },
+      {
+        "highlight": false,
+        "text": "A great strategy can sell everything. That's cool. Yet some ideas do not to be overly explained by a long strategy. If you overly explain a joke, it's getting boring."
+      },
+      {
+        "highlight": false,
+        "text": "Don't be too clever. If the brief is confusing, heady, wordy, it's an uphill battle from the beginning."
+      },
+      {
+        "highlight": false,
+        "text": "Advertising is grimy and gritty; too much strategy is \"in the head.\" Don't be too smart for your own good"
+      },
+      {
+        "highlight": false,
+        "text": "Be a strategist, not a tactician."
+      },
+      {
+        "highlight": true,
+        "text": "I’ve worked with bad strategists and I’ve worked with incredible ones. But at the end of the day, I don’t care how good you are at your job as long as you have a good attitude and you’re down to problem solve."
+      },
+      {
+        "highlight": false,
+        "text": "We know that your job is really amorphous and that almost anyone can be a strategist, but don't feel like you have to constantly justify your existence in an agency setting."
+      },
+      {
+        "highlight": false,
+        "text": "We value your work but feel skeptical when feedback feels only critical rather than constructive."
+      },
+      {
+        "highlight": false,
+        "text": "If they cannot deliver a fresh strategy, we will! "
+      },
+      {
+        "highlight": false,
+        "text": "Show me a truly great ad campaign that actually originated with an amazing strategy from a strategist please. Great insights often come from creatives and the strategy is backed into before a pitch and never referred to again (until the next pitch, “just to level-set”). Thanks for this survey!"
+      },
+      {
+        "highlight": false,
+        "text": "chill with the jargon, it makes y’all look stupid"
+      },
+      {
+        "highlight": false,
+        "text": "16 questions are 6 too many"
+      }
     ]
+  },
+  "paradox": {
+    "heading": "Hold Two Things at Once",
+    "body_1": "There's a genuine paradox in this data and I think it's worth sitting with. Creatives want strategists to take a strong position. But also to stay flexible when creative thinking evolves the strategy. They want deep involvement. But they want you out of creative territory. They want briefs that constrain. But that also liberate.",
+    "body_2": "Managing those tensions is the actual job. And the respondents who seemed to understand that were the most experienced ones, and the most generous in how they talked about us.",
+    "takeaway_1": "The brief is a creative product. Judge it by whether it makes people want to make things. If ideas don't start forming while someone reads it, rewrite it.",
+    "takeaway_2": "Your job keeps going after the briefing. Stay in the room. Build the case for the work. Help sell what creatives make. Strategy is only worth it if we fight for the best work possible. Otherwise why are we there?",
+    "takeaway_3": "Say less. Mean more. One insight on one page will always outperform fifty slides of context. A strategy can be one word. It does not have to be a deck."
+  },
+  "headline": {
+    "heading": "The underlaying theme...",
+    "body_1": "strategists are making stuff that serves the strategy process or the strategist themselves when they should be making stuff that serves the creative process.",
+    "body_2": "We optimize our work for ourselves or for clients. We should be optimizing for creatives; the people who strategy is meant to serve. ",
+    "body_3": "What does that look like? Docs with too much information. Showing the work rather than the answer. Not bringing a real point of view. Disappearing after the brief. Evaluating work rather than doing our part to help build it. "
+  },
+  "after_brief": {
+    "heading": "Your Job Is Not Done When the Brief Is Presented",
+    "body_1": "Most people want the strategist to stick around as a sounding board. A sense-checker. Someone who keeps the work honest to the strategy without controlling execution. A smaller group just wants you to get out of the way.",
+    "body_2": "The reconciliation between those two camps is pretty simple: stay available, stay invested, but earn your seat by being useful. If you're just supervising, you're in the way. If you're building, you're welcome. \"Be flexible. If a new idea beats the brief, help us sell the pivot.\"",
+    "body_3": "The strongest framing in the entire dataset, and the one I keep coming back to: the strategist's job after the brief is to build the case that helps sell the creative work. Work with the team to build an idea some armor."
+  },
+  "brief": {
+    "heading": "A brief provokes and constrains ",
+    "missing_heading": "What Briefs Are Missing",
+    "judging_body": "It's binary. Either you start having ideas while reading it or you don't. Length is a bad sign. Jargon is a bad sign. Surprise is a good one. The markers of a strong brief: short, focused, contains something the team would never have found on their own, and makes you feel something. Energy. Discomfort. Excitement. If you feel nothing, it's a document, and documents don't make ads.",
+    "body_1": "Answers on what a brief should do clustered around three things: inspire (spark ideas), constrain (define the territory), and align (get everyone pointed the same way). The best responses did all three at once. A brief should provoke thinking while narrowing the field. If it only does one, it's half a brief.",
+    "body_2": "The test that kept coming up: ideas should start forming while you read it. If a brief is strategically correct but creatively inert, it failed. \n\nYou can be right and still be useless.",
+    "judging_heading": "How Creatives Judge a Brief",
+    "missing_1": "A point of view. Take a position. Make the leap from data to decision. When strategists just lay out the facts and leave interpretation to the creative team, the creative team ends up doing the strategy work for you.",
+    "missing_2": "Human behavior. The real stuff. Demographics show up plenty. The weird, specific, true things about how people actually live? Those are rare. Tell me about the person, stop telling me about the consumer.",
+    "missing_3": "Client context. What the client expects. What has already failed. What internal politics are going to shape the approval process. Creatives want to know the game they're playing, including the rules nobody writes down.",
+    "missing_4": "One thing. A single most important thing. Briefs that present three strategic directions and let the creative team choose between them get read as indecision disguised as openness."
+  },
+  "hero": {
+    "title": "Creatives on Strategists",
+    "subtitle": "I asked 106  Creative Directors about their experiences with Strategy.  A couple strategists and one account person snuck in, but the output stands. \n\nHere's what came back.",
+    "survey_url": "https://survey.typeform.com/to/FYLuWVT6"
+  },
+  "setup": {
+    "heading": "The Survey",
+    "body_1": "This has been an on going survey, open in one capacity or another since 2018. It started with me sending it to CDs I has worked with directly who's opinion I valued. But I opened it up from there as I got eager for some statistical validity. ",
+    "body_2": "I kept it to Directors and above on purpose. Of the people who reported experience level, 57% had 10+ years working with strategists. I was hoping for 100% but titles are often inflated and people aren't great at listening. "
+  },
+  "purpose": {
+    "heading": "Find It, Point at It, Get Out of the Way",
+    "body_1": "When you ask creatives what strategy is for, they reach for spatial metaphors. Map-making. Planting a flag. Pointing to where the treasure is buried. Defining the field of play. Strategy sets the canvas. Creative paints it.",
+    "body_2": "There's a secondary frame too: strategy as a translation layer. Someone who converts a business problem into a creative problem. \"Bridge the commercial and creative.\" \"Turn the client's business problem into a simple and clear creative brief.\"",
+    "body_3": "But here's where it gets interesting. When strategists answered this same question, they talked about effectiveness. Business outcomes. Competitive advantage. Creatives talked about inspiration, direction, and constraints. Both sides are describing the same job and they're using different definitions of what they're building together. Maybe thats because we talk to each other rathner than to our creative teams.  ",
+    "quote_1": "To create a space that makes innovative thinking inevitable.",
+    "quote_2": "Clear choices that guide execution and inspire executioners.",
+    "quote_3": "Plant the flag in the ground so the creative teams know where to dig for gold."
   }
 }
