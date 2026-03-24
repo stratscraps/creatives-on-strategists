@@ -8,76 +8,515 @@
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  :root { --bg: #0a0a0a; --surface: #141414; --surface-2: #1a1a1a; --border: #262626; --text: #e5e5e5; --text-dim: #888; --text-muted: #555; --accent: #f97316; --accent-dim: rgba(249, 115, 22, 0.15); --green: #22c55e; --red: #ef4444; --blue: #3b82f6; --purple: #a855f7; }
-  body { background: var(--bg); color: var(--text); font-family: 'Inter', -apple-system, sans-serif; line-height: 1.7; font-size: 17px; -webkit-font-smoothing: antialiased; }
-  .container { max-width: 820px; margin: 0 auto; padding: 0 24px; }
-  .hero { padding: 80px 0 60px; border-bottom: 1px solid var(--border); }
-  .hero-label { font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: var(--accent); margin-bottom: 24px; }
-  .hero h1 { font-size: 48px; font-weight: 700; line-height: 1.1; letter-spacing: -1.5px; margin-bottom: 20px; }
-  .hero-sub { font-size: 18px; color: var(--text-dim); line-height: 1.6; max-width: 600px; }
-  .hero-meta { display: flex; gap: 24px; margin-top: 32px; flex-wrap: wrap; }
-  .meta-chip { font-family: 'JetBrains Mono', monospace; font-size: 13px; color: var(--text-dim); background: var(--surface); padding: 6px 14px; border-radius: 6px; border: 1px solid var(--border); }
+
+  :root {
+    --bg: #0a0a0a;
+    --surface: #141414;
+    --surface-2: #1a1a1a;
+    --border: #262626;
+    --text: #e5e5e5;
+    --text-dim: #888;
+    --text-muted: #555;
+    --accent: #f97316;
+    --accent-dim: rgba(249, 115, 22, 0.15);
+    --green: #22c55e;
+    --red: #ef4444;
+    --blue: #3b82f6;
+    --purple: #a855f7;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', -apple-system, sans-serif;
+    line-height: 1.7;
+    font-size: 17px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .container {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  .hero {
+    padding: 80px 0 60px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .hero-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 24px;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -1.5px;
+    margin-bottom: 20px;
+  }
+
+  .hero-sub {
+    font-size: 18px;
+    color: var(--text-dim);
+    line-height: 1.6;
+    max-width: 600px;
+  }
+
+  .hero-meta {
+    display: flex;
+    gap: 24px;
+    margin-top: 32px;
+    flex-wrap: wrap;
+  }
+
+  .meta-chip {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    color: var(--text-dim);
+    background: var(--surface);
+    padding: 6px 14px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+  }
+
   .meta-chip strong { color: var(--text); }
-  .survey-cta { display: inline-flex; align-items: center; gap: 8px; margin-top: 32px; padding: 12px 24px; background: var(--accent); color: #000; font-weight: 600; font-size: 15px; border-radius: 8px; text-decoration: none; transition: opacity 0.2s; }
+
+  .survey-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 32px;
+    padding: 12px 24px;
+    background: var(--accent);
+    color: #000;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: opacity 0.2s;
+  }
   .survey-cta:hover { opacity: 0.85; }
   .survey-cta svg { width: 16px; height: 16px; }
-  section { padding: 64px 0; border-bottom: 1px solid var(--border); }
+
+  section {
+    padding: 64px 0;
+    border-bottom: 1px solid var(--border);
+  }
+
   section:last-of-type { border-bottom: none; }
-  .section-label { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--text-muted); margin-bottom: 12px; }
-  h2 { font-size: 32px; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 24px; line-height: 1.2; }
-  h3 { font-size: 22px; font-weight: 600; margin-top: 48px; margin-bottom: 16px; letter-spacing: -0.3px; }
+
+  .section-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+  }
+
+  h2 {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 24px;
+    line-height: 1.2;
+  }
+
+  h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 48px;
+    margin-bottom: 16px;
+    letter-spacing: -0.3px;
+  }
+
   p { margin-bottom: 20px; color: var(--text); }
   p.dim { color: var(--text-dim); }
-  .stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 32px 0; }
-  .stat-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 24px; text-align: center; }
-  .stat-number { font-size: 42px; font-weight: 700; color: var(--accent); line-height: 1; margin-bottom: 8px; font-family: 'JetBrains Mono', monospace; }
-  .stat-label { font-size: 13px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 1px; }
-  .chart-container { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 32px; margin: 32px 0; }
-  .chart-title { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 20px; }
-  .chart-wrap { position: relative; max-height: 300px; }
-  .quote-block { border-left: 3px solid var(--accent); padding: 16px 0 16px 24px; margin: 28px 0; font-style: italic; color: var(--text-dim); font-size: 18px; line-height: 1.6; }
-  .quote-block .attr { font-style: normal; font-size: 12px; color: var(--text-muted); margin-top: 8px; font-family: 'JetBrains Mono', monospace; text-transform: uppercase; letter-spacing: 1px; }
-  .tier { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 24px 28px; margin: 20px 0; }
-  .tier-header { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
-  .tier-badge { font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 600; padding: 4px 10px; border-radius: 4px; text-transform: uppercase; letter-spacing: 1px; }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin: 32px 0;
+  }
+
+  .stat-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+    text-align: center;
+  }
+
+  .stat-number {
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--accent);
+    line-height: 1;
+    margin-bottom: 8px;
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .stat-label {
+    font-size: 13px;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .chart-container {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 32px;
+    margin: 32px 0;
+  }
+
+  .chart-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+  }
+
+  .chart-wrap {
+    position: relative;
+    max-height: 300px;
+  }
+
+  .quote-block {
+    border-left: 3px solid var(--accent);
+    padding: 16px 0 16px 24px;
+    margin: 28px 0;
+    font-style: italic;
+    color: var(--text-dim);
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .quote-block .attr {
+    font-style: normal;
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-top: 8px;
+    font-family: 'JetBrains Mono', monospace;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .tier {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px 28px;
+    margin: 20px 0;
+  }
+
+  .tier-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+
+  .tier-badge {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
   .tier-1 .tier-badge { background: rgba(239, 68, 68, 0.15); color: var(--red); }
   .tier-2 .tier-badge { background: rgba(249, 115, 22, 0.15); color: var(--accent); }
   .tier-3 .tier-badge { background: rgba(168, 85, 247, 0.15); color: var(--purple); }
   .tier-4 .tier-badge { background: rgba(59, 130, 246, 0.15); color: var(--blue); }
+
   .tier-title { font-weight: 600; font-size: 17px; }
   .tier p { margin-bottom: 0; color: var(--text-dim); font-size: 15px; }
-  .message-wall { columns: 2; column-gap: 16px; margin: 32px 0; }
-  .message-card { break-inside: avoid; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 20px; margin-bottom: 16px; font-size: 15px; color: var(--text-dim); line-height: 1.6; transition: border-color 0.2s; }
+
+  .message-wall {
+    columns: 2;
+    column-gap: 16px;
+    margin: 32px 0;
+  }
+
+  .message-card {
+    break-inside: avoid;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 16px;
+    font-size: 15px;
+    color: var(--text-dim);
+    line-height: 1.6;
+    transition: border-color 0.2s;
+  }
+
   .message-card:hover { border-color: var(--accent); }
-  .message-card.highlight { border-color: var(--accent); background: var(--accent-dim); color: var(--text); }
-  .takeaway { background: var(--surface); border: 1px solid var(--accent); border-radius: 12px; padding: 32px; margin: 32px 0; }
-  .takeaway h3 { margin-top: 0; color: var(--accent); font-size: 14px; font-family: 'JetBrains Mono', monospace; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 16px; }
+
+  .message-card.highlight {
+    border-color: var(--accent);
+    background: var(--accent-dim);
+    color: var(--text);
+  }
+
+  .takeaway {
+    background: var(--surface);
+    border: 1px solid var(--accent);
+    border-radius: 12px;
+    padding: 32px;
+    margin: 32px 0;
+  }
+
+  .takeaway h3 {
+    margin-top: 0;
+    color: var(--accent);
+    font-size: 14px;
+    font-family: 'JetBrains Mono', monospace;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 16px;
+  }
+
   .takeaway p { color: var(--text); margin-bottom: 12px; }
   .takeaway p:last-child { margin-bottom: 0; }
-  .bar-row { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
-  .bar-label { font-size: 13px; color: var(--text-dim); width: 120px; flex-shrink: 0; text-align: right; }
-  .bar-track { flex: 1; height: 28px; background: var(--surface-2); border-radius: 6px; overflow: hidden; }
-  .bar-fill { height: 100%; border-radius: 6px; transition: width 1s ease; }
-  .bar-val { font-family: 'JetBrains Mono', monospace; font-size: 13px; color: var(--text-dim); width: 40px; flex-shrink: 0; }
-  footer { padding: 48px 0; border-top: 1px solid var(--border); text-align: center; }
+
+  .bar-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+
+  .bar-label {
+    font-size: 13px;
+    color: var(--text-dim);
+    width: 120px;
+    flex-shrink: 0;
+    text-align: right;
+  }
+
+  .bar-track {
+    flex: 1;
+    height: 28px;
+    background: var(--surface-2);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  .bar-fill {
+    height: 100%;
+    border-radius: 6px;
+    transition: width 1s ease;
+  }
+
+  .bar-val {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    color: var(--text-dim);
+    width: 40px;
+    flex-shrink: 0;
+  }
+
+  footer {
+    padding: 48px 0;
+    border-top: 1px solid var(--border);
+    text-align: center;
+  }
+
   footer p { font-size: 14px; color: var(--text-muted); }
   footer a { color: var(--accent); text-decoration: none; }
   a { color: var(--accent); }
-  @media (max-width: 640px) { .hero h1 { font-size: 32px; } h2 { font-size: 26px; } .stats-grid { grid-template-columns: 1fr; } .message-wall { columns: 1; } .hero-meta { flex-direction: column; gap: 8px; } .bar-label { width: 80px; font-size: 12px; } }
-  .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
-  .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+  @media (max-width: 640px) {
+    .hero h1 { font-size: 32px; }
+    h2 { font-size: 26px; }
+    .stats-grid { grid-template-columns: 1fr; }
+    .message-wall { columns: 1; }
+    .hero-meta { flex-direction: column; gap: 8px; }
+    .bar-label { width: 80px; font-size: 12px; }
+  }
+
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Response drawer styles */
+  .response-drawer {
+    margin: 28px 0;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    background: var(--surface);
+  }
+
+  .response-drawer-toggle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+    background: var(--surface);
+    border: none;
+    color: var(--text-dim);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 0.2s, background 0.2s;
+  }
+
+  .response-drawer-toggle:hover {
+    color: var(--text);
+    background: var(--surface-2);
+  }
+
+  .response-drawer-toggle .arrow {
+    transition: transform 0.3s;
+    font-size: 14px;
+  }
+
+  .response-drawer.open .response-drawer-toggle .arrow {
+    transform: rotate(180deg);
+  }
+
+  .response-drawer-toggle .arrow { color: var(--accent); }
+
+  .response-drawer-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+
+  .response-drawer.open .response-drawer-body {
+    max-height: 5000px;
+  }
+
+  .response-list {
+    padding: 0 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-height: 500px;
+    overflow-y: auto;
+  }
+
+  .response-list::-webkit-scrollbar { width: 6px; }
+  .response-list::-webkit-scrollbar-track { background: var(--surface); }
+  .response-list::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+  .response-item {
+    padding: 12px 16px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 14px;
+    color: var(--text-dim);
+    line-height: 1.6;
+  }
+
+  .response-item .response-meta {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: var(--text-muted);
+    margin-top: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .response-filter-bar {
+    display: flex;
+    gap: 8px;
+    padding: 0 20px 12px;
+    flex-wrap: wrap;
+  }
+
+  .response-filter-btn {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    padding: 4px 10px;
+    border-radius: 4px;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .response-filter-btn:hover, .response-filter-btn.active {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: var(--accent-dim);
+  }
+
+  /* Browse all responses section */
+  .browse-question-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    color: var(--text);
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+  .browse-question-btn:hover {
+    border-color: var(--accent);
+    background: var(--surface-2);
+  }
+
+  .browse-question-btn .q-count {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--text-muted);
+    flex-shrink: 0;
+    margin-left: 16px;
+  }
 </style>
 </head>
 <body>
+
 <div class="container" id="app">
   <p style="color: var(--text-muted); padding: 100px 0; text-align: center;">Loading...</p>
 </div>
+
 <script>
 const ARROW_SVG = '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" style="width:16px;height:16px;"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"/></svg>';
+
 function renderPage(c) {
   const app = document.getElementById('app');
   app.innerHTML = `
+<!-- HERO -->
 <header class="hero">
   <div class="hero-label">STRAT_SCRAPS</div>
   <h1>${c.hero.title}</h1>
@@ -88,67 +527,361 @@ function renderPage(c) {
     <span class="meta-chip"><strong>2</strong> waves, 2023-2024</span>
     <span class="meta-chip"><strong>57%</strong> have 10+ years exp</span>
   </div>
-  <a href="${c.hero.survey_url}" target="_blank" class="survey-cta">Take the Survey ${ARROW_SVG}</a>
+  <a href="${c.hero.survey_url}" target="_blank" class="survey-cta">
+    Take the Survey ${ARROW_SVG}
+  </a>
 </header>
-<section class="fade-in"><div class="section-label">01 / The Setup</div><h2>${c.setup.heading}</h2><p>${c.setup.body_1}</p><p>${c.setup.body_2}</p>
-  <div class="stats-grid"><div class="stat-card"><div class="stat-number">90</div><div class="stat-label">Creatives</div></div><div class="stat-card"><div class="stat-number">14</div><div class="stat-label">Strategists</div></div><div class="stat-card"><div class="stat-number">1</div><div class="stat-label">Account</div></div></div>
-  <div class="chart-container"><div class="chart-title">Experience Working with Strategists</div><div class="chart-wrap"><canvas id="experienceChart"></canvas></div></div></section>
-<section class="fade-in"><div class="section-label">02 / The Headline</div><h2>${c.headline.heading}</h2><p>${c.headline.body_1}</p><p>${c.headline.body_2}</p><p>${c.headline.body_3}</p></section>
-<section class="fade-in"><div class="section-label">03 / What Is Strategy For?</div><h2>${c.purpose.heading}</h2><p>${c.purpose.body_1}</p><p>${c.purpose.body_2}</p><p>${c.purpose.body_3}</p>
-  <div class="quote-block">"${c.purpose.quote_1}"<div class="attr">Survey respondent</div></div><div class="quote-block">"${c.purpose.quote_2}"<div class="attr">Survey respondent</div></div><div class="quote-block">"${c.purpose.quote_3}"<div class="attr">Survey respondent</div></div></section>
-<section class="fade-in"><div class="section-label">04 / The Creative Brief</div><h2>${c.brief.heading}</h2><p>${c.brief.body_1}</p><p>${c.brief.body_2}</p><h3>${c.brief.missing_heading}</h3><p>${c.brief.missing_1}</p><p>${c.brief.missing_2}</p><p>${c.brief.missing_3}</p><p>${c.brief.missing_4}</p><h3>${c.brief.judging_heading}</h3><p>${c.brief.judging_body}</p></section>
-<section class="fade-in"><div class="section-label">05 / What Frustrates Creatives</div><h2>${c.frustrations.heading}</h2><p>${c.frustrations.intro}</p>
-  <div class="tier tier-1"><div class="tier-header"><span class="tier-badge">Tier 1</span><span class="tier-title">${c.frustrations.tier1_title}</span></div><p>${c.frustrations.tier1_body}</p></div>
-  <div class="tier tier-2"><div class="tier-header"><span class="tier-badge">Tier 2</span><span class="tier-title">${c.frustrations.tier2_title}</span></div><p>${c.frustrations.tier2_body}</p></div>
-  <div class="tier tier-3"><div class="tier-header"><span class="tier-badge">Tier 3</span><span class="tier-title">${c.frustrations.tier3_title}</span></div><p>${c.frustrations.tier3_body}</p></div>
-  <div class="tier tier-4"><div class="tier-header"><span class="tier-badge">Tier 4</span><span class="tier-title">${c.frustrations.tier4_title}</span></div><p>${c.frustrations.tier4_body}</p></div>
-  <div class="quote-block">"Fuck PowerPoint."<div class="attr">Survey respondent (anonymous)</div></div></section>
-<section class="fade-in"><div class="section-label">06 / What Creatives Want More Of</div><h2>${c.want_more.heading}</h2>
-  <div class="chart-container"><div class="chart-title">Most Requested Changes</div><div style="margin-top:16px;">
-    <div class="bar-row"><div class="bar-label">Collaboration</div><div class="bar-track"><div class="bar-fill" style="width:92%;background:var(--accent);"></div></div><div class="bar-val">#1</div></div>
-    <div class="bar-row"><div class="bar-label">Boldness</div><div class="bar-track"><div class="bar-fill" style="width:74%;background:var(--accent);opacity:0.85;"></div></div><div class="bar-val">#2</div></div>
-    <div class="bar-row"><div class="bar-label">Simplification</div><div class="bar-track"><div class="bar-fill" style="width:68%;background:var(--accent);opacity:0.7;"></div></div><div class="bar-val">#3</div></div>
-    <div class="bar-row"><div class="bar-label">Cultural fluency</div><div class="bar-track"><div class="bar-fill" style="width:55%;background:var(--accent);opacity:0.6;"></div></div><div class="bar-val">#4</div></div>
-    <div class="bar-row"><div class="bar-label">Advocacy</div><div class="bar-track"><div class="bar-fill" style="width:44%;background:var(--accent);opacity:0.5;"></div></div><div class="bar-val">#5</div></div>
-  </div></div>
+
+<!-- SETUP -->
+<section class="fade-in">
+  <div class="section-label">01 / The Setup</div>
+  <h2>${c.setup.heading}</h2>
+  <p>${c.setup.body_1}</p>
+  <p>${c.setup.body_2}</p>
+  <div class="stats-grid">
+    <div class="stat-card"><div class="stat-number">90</div><div class="stat-label">Creatives</div></div>
+    <div class="stat-card"><div class="stat-number">14</div><div class="stat-label">Strategists</div></div>
+    <div class="stat-card"><div class="stat-number">1</div><div class="stat-label">Account</div></div>
+  </div>
+  <div class="chart-container">
+    <div class="chart-title">Experience Working with Strategists</div>
+    <div class="chart-wrap"><canvas id="experienceChart"></canvas></div>
+  </div>
+</section>
+
+<!-- HEADLINE -->
+<section class="fade-in">
+  <div class="section-label">02 / The Headline</div>
+  <h2>${c.headline.heading}</h2>
+  <p>${c.headline.body_1}</p>
+  <p>${c.headline.body_2}</p>
+  <p>${c.headline.body_3}</p>
+</section>
+
+<!-- PURPOSE -->
+<section class="fade-in">
+  <div class="section-label">03 / What Is Strategy For?</div>
+  <h2>${c.purpose.heading}</h2>
+  <p>${c.purpose.body_1}</p>
+  <p>${c.purpose.body_2}</p>
+  <p>${c.purpose.body_3}</p>
+  <div class="quote-block">"${c.purpose.quote_1}"<div class="attr">Survey respondent</div></div>
+  <div class="quote-block">"${c.purpose.quote_2}"<div class="attr">Survey respondent</div></div>
+  <div class="quote-block">"${c.purpose.quote_3}"<div class="attr">Survey respondent</div></div>
+</section>
+
+<!-- BRIEF -->
+<section class="fade-in">
+  <div class="section-label">04 / The Creative Brief</div>
+  <h2>${c.brief.heading}</h2>
+  <p>${c.brief.body_1}</p>
+  <p>${c.brief.body_2}</p>
+  <h3>${c.brief.missing_heading}</h3>
+  <p>${c.brief.missing_1}</p>
+  <p>${c.brief.missing_2}</p>
+  <p>${c.brief.missing_3}</p>
+  <p>${c.brief.missing_4}</p>
+  <h3>${c.brief.judging_heading}</h3>
+  <p>${c.brief.judging_body}</p>
+</section>
+
+<!-- FRUSTRATIONS -->
+<section class="fade-in">
+  <div class="section-label">05 / What Frustrates Creatives</div>
+  <h2>${c.frustrations.heading}</h2>
+  <p>${c.frustrations.intro}</p>
+  <div class="tier tier-1">
+    <div class="tier-header"><span class="tier-badge">Tier 1</span><span class="tier-title">${c.frustrations.tier1_title}</span></div>
+    <p>${c.frustrations.tier1_body}</p>
+  </div>
+  <div class="tier tier-2">
+    <div class="tier-header"><span class="tier-badge">Tier 2</span><span class="tier-title">${c.frustrations.tier2_title}</span></div>
+    <p>${c.frustrations.tier2_body}</p>
+  </div>
+  <div class="tier tier-3">
+    <div class="tier-header"><span class="tier-badge">Tier 3</span><span class="tier-title">${c.frustrations.tier3_title}</span></div>
+    <p>${c.frustrations.tier3_body}</p>
+  </div>
+  <div class="tier tier-4">
+    <div class="tier-header"><span class="tier-badge">Tier 4</span><span class="tier-title">${c.frustrations.tier4_title}</span></div>
+    <p>${c.frustrations.tier4_body}</p>
+  </div>
+  <div class="quote-block">"Fuck PowerPoint."<div class="attr">Survey respondent (anonymous)</div></div>
+</section>
+
+<!-- WANT MORE -->
+<section class="fade-in">
+  <div class="section-label">06 / What Creatives Want More Of</div>
+  <h2>${c.want_more.heading}</h2>
+  <div class="chart-container">
+    <div class="chart-title">Most Requested Changes</div>
+    <div style="margin-top: 16px;">
+      <div class="bar-row"><div class="bar-label">Collaboration</div><div class="bar-track"><div class="bar-fill" style="width:92%;background:var(--accent);"></div></div><div class="bar-val">#1</div></div>
+      <div class="bar-row"><div class="bar-label">Boldness</div><div class="bar-track"><div class="bar-fill" style="width:74%;background:var(--accent);opacity:0.85;"></div></div><div class="bar-val">#2</div></div>
+      <div class="bar-row"><div class="bar-label">Simplification</div><div class="bar-track"><div class="bar-fill" style="width:68%;background:var(--accent);opacity:0.7;"></div></div><div class="bar-val">#3</div></div>
+      <div class="bar-row"><div class="bar-label">Cultural fluency</div><div class="bar-track"><div class="bar-fill" style="width:55%;background:var(--accent);opacity:0.6;"></div></div><div class="bar-val">#4</div></div>
+      <div class="bar-row"><div class="bar-label">Advocacy</div><div class="bar-track"><div class="bar-fill" style="width:44%;background:var(--accent);opacity:0.5;"></div></div><div class="bar-val">#5</div></div>
+    </div>
+  </div>
   <p><strong>Collaboration throughout the process.</strong> ${c.want_more.collaboration.replace(/^Collaboration throughout the process\.\s*/, '')}</p>
   <p><strong>Boldness.</strong> ${c.want_more.boldness.replace(/^Boldness\.\s*/, '')}</p>
   <p><strong>Simplification.</strong> ${c.want_more.simplification.replace(/^Simplification\.\s*/, '')}</p>
   <p><strong>Cultural fluency over data recitation.</strong> ${c.want_more.cultural_fluency.replace(/^Cultural fluency over data recitation\.\s*/, '')}</p>
-  <p><strong>Advocacy for the work.</strong> ${c.want_more.advocacy.replace(/^Advocacy for the work\.\s*/, '')}</p></section>
-<section class="fade-in"><div class="section-label">07 / Feedback</div><h2>${c.feedback.heading}</h2><h3>${c.feedback.least_heading}</h3><p>${c.feedback.least_1}</p><p>${c.feedback.least_2}</p><h3>${c.feedback.most_heading}</h3><p>${c.feedback.most_body}</p>
-  <div class="quote-block">"${c.feedback.quote}"<div class="attr">Survey respondent (anonymous)</div></div></section>
-<section class="fade-in"><div class="section-label">08 / Life After the Brief</div><h2>${c.after_brief.heading}</h2><p>${c.after_brief.body_1}</p><p>${c.after_brief.body_2}</p><p>${c.after_brief.body_3}</p></section>
-<section class="fade-in"><div class="section-label">09 / Blind Spots</div><h2>${c.blind_spots.heading}</h2>
-  <div class="chart-container"><div class="chart-title">Cited Blind Spots</div><div class="chart-wrap"><canvas id="blindSpotChart"></canvas></div></div>
+  <p><strong>Advocacy for the work.</strong> ${c.want_more.advocacy.replace(/^Advocacy for the work\.\s*/, '')}</p>
+</section>
+
+<!-- FEEDBACK -->
+<section class="fade-in">
+  <div class="section-label">07 / Feedback</div>
+  <h2>${c.feedback.heading}</h2>
+  <h3>${c.feedback.least_heading}</h3>
+  <p>${c.feedback.least_1}</p>
+  <p>${c.feedback.least_2}</p>
+  <h3>${c.feedback.most_heading}</h3>
+  <p>${c.feedback.most_body}</p>
+  <div class="quote-block">"${c.feedback.quote}"<div class="attr">Survey respondent (anonymous)</div></div>
+</section>
+
+<!-- AFTER BRIEF -->
+<section class="fade-in">
+  <div class="section-label">08 / Life After the Brief</div>
+  <h2>${c.after_brief.heading}</h2>
+  <p>${c.after_brief.body_1}</p>
+  <p>${c.after_brief.body_2}</p>
+  <p>${c.after_brief.body_3}</p>
+</section>
+
+<!-- BLIND SPOTS -->
+<section class="fade-in">
+  <div class="section-label">09 / Blind Spots</div>
+  <h2>${c.blind_spots.heading}</h2>
+  <div class="chart-container">
+    <div class="chart-title">Cited Blind Spots</div>
+    <div class="chart-wrap"><canvas id="blindSpotChart"></canvas></div>
+  </div>
   <p><strong>Time.</strong> ${c.blind_spots.time.replace(/^Time\.\s*/, '')}</p>
   <p><strong>Executability.</strong> ${c.blind_spots.executability.replace(/^Executability\.\s*/, '')}</p>
   <p><strong>Client politics.</strong> ${c.blind_spots.politics.replace(/^Client politics\.\s*/, '')}</p>
   <p><strong>Real people.</strong> ${c.blind_spots.people.replace(/^Real people\.\s*/, '')}</p>
-  <p><strong>That strategy is a service function.</strong> ${c.blind_spots.service.replace(/^That strategy is a service function\.\s*/, '')}</p></section>
-<section class="fade-in"><div class="section-label">10 / The Paradox</div><h2>${c.paradox.heading}</h2><p>${c.paradox.body_1}</p><p>${c.paradox.body_2}</p>
-  <div class="takeaway"><h3>If You Remember Three Things</h3>
+  <p><strong>That strategy is a service function.</strong> ${c.blind_spots.service.replace(/^That strategy is a service function\.\s*/, '')}</p>
+</section>
+
+<!-- PARADOX -->
+<section class="fade-in">
+  <div class="section-label">10 / The Paradox</div>
+  <h2>${c.paradox.heading}</h2>
+  <p>${c.paradox.body_1}</p>
+  <p>${c.paradox.body_2}</p>
+  <div class="takeaway">
+    <h3>If You Remember Three Things</h3>
     <p><strong>The brief is a creative product.</strong> ${c.paradox.takeaway_1.replace(/^The brief is a creative product\.\s*/, '')}</p>
     <p><strong>Your job keeps going after the briefing.</strong> ${c.paradox.takeaway_2.replace(/^Your job keeps going after the briefing\.\s*/, '')}</p>
     <p><strong>Say less. Mean more.</strong> ${c.paradox.takeaway_3.replace(/^Say less\. Mean more\.\s*/, '')}</p>
-  </div></section>
-<section class="fade-in"><div class="section-label">11 / The Anonymous Messages</div><h2>${c.anonymous.heading}</h2><p class="dim">${c.anonymous.intro}</p>
-  <div class="message-wall">${c.anonymous.messages.map(m => '<div class="message-card'+(m.highlight?' highlight':'')+'">"'+m.text+'"</div>').join('\n')}</div></section>
+  </div>
+</section>
+
+<!-- ANONYMOUS -->
+<section class="fade-in">
+  <div class="section-label">11 / The Anonymous Messages</div>
+  <h2>${c.anonymous.heading}</h2>
+  <p class="dim">${c.anonymous.intro}</p>
+  <div class="message-wall">
+    ${c.anonymous.messages.map(m => `<div class="message-card${m.highlight ? ' highlight' : ''}">"${m.text}"</div>`).join('\n    ')}
+  </div>
+</section>
+
+<!-- BROWSE ALL RESPONSES -->
+<section class="fade-in" id="browse-section">
+  <div class="section-label">12 / The Raw Data</div>
+  <h2>Browse All Responses</h2>
+  <p class="dim">Every answer to every question. Click a question to expand.</p>
+  <div id="browse-container"></div>
+</section>
+
+<!-- FOOTER -->
 <footer>
-  <p style="margin-bottom:16px;"><a href="${c.hero.survey_url}" target="_blank" class="survey-cta" style="display:inline-flex;">Add Your Voice ${ARROW_SVG}</a></p>
+  <p style="margin-bottom: 16px;">
+    <a href="${c.hero.survey_url}" target="_blank" class="survey-cta" style="display: inline-flex;">
+      Add Your Voice ${ARROW_SVG}
+    </a>
+  </p>
   <p><a href="https://stratscraps.substack.com" target="_blank">STRAT_SCRAPS</a> by Alex Morris</p>
-  <p style="margin-top:8px;font-size:12px;">106 responses &middot; 2 waves &middot; 2023-2024</p>
-</footer>`;
-  const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); }); }, { threshold: 0.1 });
+  <p style="margin-top: 8px; font-size: 12px;">106 responses &middot; 2 waves &middot; 2023-2024</p>
+</footer>
+`;
+
+  // Scroll animations
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
   document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-  Chart.defaults.color = '#888'; Chart.defaults.font.family = "'Inter', sans-serif"; Chart.defaults.plugins.legend.display = false;
-  new Chart(document.getElementById('experienceChart').getContext('2d'), { type:'doughnut', data:{ labels:['10+ years','5-9 years','Less than 5 years','Not reported'], datasets:[{data:[34,15,11,46],backgroundColor:['#f97316','rgba(249,115,22,0.6)','rgba(249,115,22,0.3)','#262626'],borderColor:'#0a0a0a',borderWidth:3}] }, options:{responsive:true,maintainAspectRatio:true,cutout:'60%',plugins:{legend:{display:true,position:'right',labels:{padding:16,usePointStyle:true,pointStyleWidth:12,font:{size:13}}}}} });
-  new Chart(document.getElementById('blindSpotChart').getContext('2d'), { type:'bar', data:{ labels:['Timeline\ncompression','Executability','Client\npolitics','Real human\nbehavior','Service\nfunction'], datasets:[{data:[28,22,19,17,12],backgroundColor:['#ef4444','#f97316','#a855f7','#3b82f6','#22c55e'],borderRadius:6,barThickness:36}] }, options:{responsive:true,maintainAspectRatio:true,indexAxis:'y',scales:{x:{display:false,grid:{display:false}},y:{grid:{display:false},ticks:{font:{size:13}}}},plugins:{tooltip:{callbacks:{label:function(ctx){return ctx.raw+' mentions';}}}}} });
+
+  // Charts
+  Chart.defaults.color = '#888';
+  Chart.defaults.font.family = "'Inter', sans-serif";
+  Chart.defaults.plugins.legend.display = false;
+
+  new Chart(document.getElementById('experienceChart').getContext('2d'), {
+    type: 'doughnut',
+    data: {
+      labels: ['10+ years', '5-9 years', 'Less than 5 years', 'Not reported'],
+      datasets: [{ data: [34, 15, 11, 46], backgroundColor: ['#f97316', 'rgba(249,115,22,0.6)', 'rgba(249,115,22,0.3)', '#262626'], borderColor: '#0a0a0a', borderWidth: 3 }]
+    },
+    options: { responsive: true, maintainAspectRatio: true, cutout: '60%', plugins: { legend: { display: true, position: 'right', labels: { padding: 16, usePointStyle: true, pointStyleWidth: 12, font: { size: 13 } } } } }
+  });
+
+  new Chart(document.getElementById('blindSpotChart').getContext('2d'), {
+    type: 'bar',
+    data: {
+      labels: ['Timeline\\ncompression', 'Executability', 'Client\\npolitics', 'Real human\\nbehavior', 'Service\\nfunction'],
+      datasets: [{ data: [28, 22, 19, 17, 12], backgroundColor: ['#ef4444', '#f97316', '#a855f7', '#3b82f6', '#22c55e'], borderRadius: 6, barThickness: 36 }]
+    },
+    options: { responsive: true, maintainAspectRatio: true, indexAxis: 'y', scales: { x: { display: false, grid: { display: false } }, y: { grid: { display: false }, ticks: { font: { size: 13 } } } }, plugins: { tooltip: { callbacks: { label: function(ctx) { return ctx.raw + ' mentions'; } } } } }
+  });
 }
-fetch('/content/page.json').then(r=>r.json()).then(data=>renderPage(data)).catch(err=>{console.error('Failed to load content:',err);document.getElementById('app').innerHTML='<p style="color:#ef4444;padding:100px 0;text-align:center;">Failed to load content.</p>';});
+
+// Drawer helper
+function makeDrawer(questionId, label, responses) {
+  if (!responses || !responses.length) return '';
+  const items = responses.map(r => {
+    const meta = [r.role, r.experience].filter(Boolean).join(' · ');
+    return `<div class="response-item">"${r.text}"${meta ? `<div class="response-meta">${meta}</div>` : ''}</div>`;
+  }).join('');
+
+  const roles = [...new Set(responses.map(r => r.role))].filter(Boolean);
+  const filterBtns = roles.length > 1
+    ? `<div class="response-filter-bar">
+        <button class="response-filter-btn active" data-drawer="${questionId}" data-role="all">All (${responses.length})</button>
+        ${roles.map(role => {
+          const count = responses.filter(r => r.role === role).length;
+          return `<button class="response-filter-btn" data-drawer="${questionId}" data-role="${role}">${role} (${count})</button>`;
+        }).join('')}
+      </div>`
+    : '';
+
+  return `<div class="response-drawer" id="drawer-${questionId}">
+    <button class="response-drawer-toggle" onclick="toggleDrawer('${questionId}')">
+      <span>${label} — ${responses.length} responses</span>
+      <span class="arrow">▼</span>
+    </button>
+    <div class="response-drawer-body">
+      ${filterBtns}
+      <div class="response-list" data-drawer-list="${questionId}">${items}</div>
+    </div>
+  </div>`;
+}
+
+function toggleDrawer(id) {
+  document.getElementById('drawer-' + id).classList.toggle('open');
+}
+
+// Response data store
+let allResponses = null;
+
+// Map question IDs to site sections
+const sectionQuestionMap = {
+  'purpose': ['purpose_of_strategy'],
+  'brief': ['purpose_of_creative_brief', 'info_often_left_out_of_briefs', 'how_to_judge_a_brief'],
+  'frustrations': ['frustrating_habit'],
+  'want_more': ['wish_strategists_did_more_of', 'one_thing_to_improve_your_work'],
+  'feedback': ['best_way_to_give_feedback', 'least_helpful_feedback'],
+  'after_brief': ['role_after_briefing'],
+  'blind_spots': ['what_strategists_never_think_about'],
+  'anonymous': ['anonymous_message_to_strategists'],
+};
+
+function injectInlineDrawers(responseData) {
+  if (!responseData || !responseData.questions) return;
+  allResponses = responseData;
+  const qMap = {};
+  responseData.questions.forEach(q => { qMap[q.id] = q; });
+
+  // Inject drawers into each section
+  Object.entries(sectionQuestionMap).forEach(([sectionKey, questionIds]) => {
+    questionIds.forEach(qId => {
+      const q = qMap[qId];
+      if (!q) return;
+      // Find the section by looking for a data attribute or the section label
+      const sections = document.querySelectorAll('section');
+      sections.forEach(sec => {
+        const label = sec.querySelector('.section-label');
+        if (!label) return;
+        const sectionMap = {
+          'purpose': '03', 'brief': '04', 'frustrations': '05',
+          'want_more': '06', 'feedback': '07', 'after_brief': '08',
+          'blind_spots': '09', 'anonymous': '11'
+        };
+        if (label.textContent.includes(sectionMap[sectionKey])) {
+          // Append drawer before end of section
+          const drawerHtml = makeDrawer(qId, q.question, q.responses);
+          sec.insertAdjacentHTML('beforeend', drawerHtml);
+        }
+      });
+    });
+  });
+
+  // Build the browse-all section
+  const browseContainer = document.getElementById('browse-container');
+  if (browseContainer) {
+    const browseHtml = responseData.questions.map(q => {
+      return makeDrawer('browse_' + q.id, q.question, q.responses);
+    }).join('');
+    browseContainer.innerHTML = browseHtml;
+  }
+
+  // Wire up filter buttons
+  document.querySelectorAll('.response-filter-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+      const drawerId = this.dataset.drawer;
+      const role = this.dataset.role;
+      const list = document.querySelector(`[data-drawer-list="${drawerId}"]`);
+      if (!list) return;
+
+      // Update active button
+      this.parentElement.querySelectorAll('.response-filter-btn').forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+
+      // Filter items
+      list.querySelectorAll('.response-item').forEach(item => {
+        const meta = item.querySelector('.response-meta');
+        if (role === 'all') {
+          item.style.display = '';
+        } else {
+          item.style.display = (meta && meta.textContent.includes(role)) ? '' : 'none';
+        }
+      });
+    });
+  });
+}
+
+// Load content from JSON
+fetch('/content/page.json')
+  .then(r => r.json())
+  .then(data => {
+    renderPage(data);
+    // Then load responses
+    return fetch('/content/responses.json');
+  })
+  .then(r => r.json())
+  .then(responseData => injectInlineDrawers(responseData))
+  .catch(err => {
+    console.error('Failed to load content:', err);
+    if (!document.querySelector('header.hero')) {
+      document.getElementById('app').innerHTML = '<p style="color:#ef4444;padding:100px 0;text-align:center;">Failed to load content. Check console.</p>';
+    }
+  });
 </script>
+
 <script>
-  if (window.netlifyIdentity) { window.netlifyIdentity.on("init", user => { if (!user) { window.netlifyIdentity.on("login", () => { document.location.href = "/admin/"; }); } }); }
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
 </script>
 </body>
 </html>
