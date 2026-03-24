@@ -22,7 +22,7 @@
     "tier2_title": "Scope Creep Into Creative Territory",
     "tier3_title": "Jargon and Abstraction",
     "tier4_title": "Rigidity",
-    "intro": "Clear tiers. Sorted by how often they came up. Consistent across both waves, across experience levels, across roles.",
+    "intro": "Clear tiers. Sorted by how often they came up. ",
     "tier4_body": "Strategists who treat the brief like it's carved in stone. The creative process evolves strategy. It just does. The ask: be prepared to concept together, or embrace total departure when a better idea shows up from a direction you didn't plan for.",
     "tier3_body": "Marketing-speak. Acronyms. \"Big words because you don't have concise ones.\" Creatives read jargon as a tell that the thinking underneath is unclear. As one person put it, jargon in any field \"is intended to dismay others from analyzing the work.\" That's a bar.",
     "tier2_body": "\"Thought-starters.\" Second most cited. And the complaint is specific: strategists who write creative platforms that are actually campaign ideas. Who write strategy lines that are really taglines. Who provide references that narrow the space instead of opening it. The line between \"inspiring direction\" and \"doing my job for me\" is the most contested boundary in this whole survey.",
@@ -268,11 +268,11 @@
   },
   "paradox": {
     "heading": "Hold Two Things at Once",
-    "body_1": "There's a genuine paradox in this data and I think it's worth sitting with. Creatives want strategists to take a strong position. But also to stay flexible when creative thinking evolves the strategy. They want deep involvement. But they want you out of creative territory. They want briefs that constrain. But that also liberate.",
-    "body_2": "Managing those tensions is the actual job. And the respondents who seemed to understand that were the most experienced ones, and the most generous in how they talked about us.",
+    "body_1": "There's a tension in the data about what creatives want... Creatives want strategists to take a strong position. But also to stay flexible when creative thinking evolves the strategy. They want deep involvement. But they want you out of creative territory. They want briefs that constrain. But that also liberate.",
+    "body_2": "Managing those tensions is the reality of being a good strategist. And the respondents who seemed to understand that were the most experienced ones and the most generous in how they talked about us.",
     "takeaway_1": "The brief is a creative product. Judge it by whether it makes people want to make things. If ideas don't start forming while someone reads it, rewrite it.",
     "takeaway_2": "Your job keeps going after the briefing. Stay in the room. Build the case for the work. Help sell what creatives make. Strategy is only worth it if we fight for the best work possible. Otherwise why are we there?",
-    "takeaway_3": "Say less. Mean more. One insight on one page will always outperform fifty slides of context. A strategy can be one word. It does not have to be a deck."
+    "takeaway_3": "Say less. Mean more. One insight on one page will always outperform multiple slides of context. A strategy can be one word. It does not have to be a deck."
   },
   "headline": {
     "heading": "The underlaying theme...",
@@ -284,7 +284,7 @@
     "heading": "Your Job Is Not Done When the Brief Is Presented",
     "body_1": "Most people want the strategist to stick around as a sounding board. A sense-checker. Someone who keeps the work honest to the strategy without controlling execution. A smaller group just wants you to get out of the way.",
     "body_2": "The reconciliation between those two camps is pretty simple: stay available, stay invested, but earn your seat by being useful. If you're just supervising, you're in the way. If you're building, you're welcome. \"Be flexible. If a new idea beats the brief, help us sell the pivot.\"",
-    "body_3": "The strongest framing in the entire dataset, and the one I keep coming back to: the strategist's job after the brief is to build the case that helps sell the creative work. Work with the team to build an idea some armor."
+    "body_3": "The strategist's job after the brief is to build the case that helps sell the creative work. Work with the team to build an idea some armor."
   },
   "brief": {
     "heading": "A brief provokes and constrains ",
