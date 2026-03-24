@@ -1,0 +1,161 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "page"
+    label: "Page Content"
+    files:
+      - name: "content"
+        label: "Survey Page"
+        file: "content/page.json"
+        format: "json"
+        fields:
+          # HERO
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "text" }
+              - { label: "Survey URL", name: "survey_url", widget: "string" }
+
+          # SETUP
+          - label: "01 - The Setup"
+            name: "setup"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Paragraph 1", name: "body_1", widget: "text" }
+              - { label: "Paragraph 2", name: "body_2", widget: "text" }
+
+          # HEADLINE
+          - label: "02 - The Headline"
+            name: "headline"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Paragraph 1", name: "body_1", widget: "text" }
+              - { label: "Paragraph 2", name: "body_2", widget: "text" }
+              - { label: "Paragraph 3", name: "body_3", widget: "text" }
+
+          # PURPOSE
+          - label: "03 - What Is Strategy For?"
+            name: "purpose"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Paragraph 1", name: "body_1", widget: "text" }
+              - { label: "Paragraph 2", name: "body_2", widget: "text" }
+              - { label: "Paragraph 3", name: "body_3", widget: "text" }
+              - { label: "Quote 1", name: "quote_1", widget: "string" }
+              - { label: "Quote 2", name: "quote_2", widget: "string" }
+              - { label: "Quote 3", name: "quote_3", widget: "string" }
+
+          # BRIEF
+          - label: "04 - The Creative Brief"
+            name: "brief"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Paragraph 1", name: "body_1", widget: "text" }
+              - { label: "Paragraph 2", name: "body_2", widget: "text" }
+              - { label: "Missing Section Heading", name: "missing_heading", widget: "string" }
+              - { label: "Missing 1", name: "missing_1", widget: "text" }
+              - { label: "Missing 2", name: "missing_2", widget: "text" }
+              - { label: "Missing 3", name: "missing_3", widget: "text" }
+              - { label: "Missing 4", name: "missing_4", widget: "text" }
+              - { label: "Judging Section Heading", name: "judging_heading", widget: "string" }
+              - { label: "Judging Body", name: "judging_body", widget: "text" }
+
+          # FRUSTRATIONS
+          - label: "05 - Frustrations"
+            name: "frustrations"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Intro", name: "intro", widget: "text" }
+              - { label: "Tier 1 Title", name: "tier1_title", widget: "string" }
+              - { label: "Tier 1 Body", name: "tier1_body", widget: "text" }
+              - { label: "Tier 2 Title", name: "tier2_title", widget: "string" }
+              - { label: "Tier 2 Body", name: "tier2_body", widget: "text" }
+              - { label: "Tier 3 Title", name: "tier3_title", widget: "string" }
+              - { label: "Tier 3 Body", name: "tier3_body", widget: "text" }
+              - { label: "Tier 4 Title", name: "tier4_title", widget: "string" }
+              - { label: "Tier 4 Body", name: "tier4_body", widget: "text" }
+
+          # WANT MORE
+          - label: "06 - What Creatives Want More Of"
+            name: "want_more"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Collaboration", name: "collaboration", widget: "text" }
+              - { label: "Boldness", name: "boldness", widget: "text" }
+              - { label: "Simplification", name: "simplification", widget: "text" }
+              - { label: "Cultural Fluency", name: "cultural_fluency", widget: "text" }
+              - { label: "Advocacy", name: "advocacy", widget: "text" }
+
+          # FEEDBACK
+          - label: "07 - Feedback"
+            name: "feedback"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Least Helpful Heading", name: "least_heading", widget: "string" }
+              - { label: "Least Helpful 1", name: "least_1", widget: "text" }
+              - { label: "Least Helpful 2", name: "least_2", widget: "text" }
+              - { label: "Most Helpful Heading", name: "most_heading", widget: "string" }
+              - { label: "Most Helpful Body", name: "most_body", widget: "text" }
+              - { label: "Quote", name: "quote", widget: "string" }
+
+          # AFTER BRIEF
+          - label: "08 - Life After the Brief"
+            name: "after_brief"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Paragraph 1", name: "body_1", widget: "text" }
+              - { label: "Paragraph 2", name: "body_2", widget: "text" }
+              - { label: "Paragraph 3", name: "body_3", widget: "text" }
+
+          # BLIND SPOTS
+          - label: "09 - Blind Spots"
+            name: "blind_spots"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Time", name: "time", widget: "text" }
+              - { label: "Executability", name: "executability", widget: "text" }
+              - { label: "Client Politics", name: "politics", widget: "text" }
+              - { label: "Real People", name: "people", widget: "text" }
+              - { label: "Service Function", name: "service", widget: "text" }
+
+          # PARADOX
+          - label: "10 - The Paradox"
+            name: "paradox"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Paragraph 1", name: "body_1", widget: "text" }
+              - { label: "Paragraph 2", name: "body_2", widget: "text" }
+              - { label: "Takeaway 1", name: "takeaway_1", widget: "text" }
+              - { label: "Takeaway 2", name: "takeaway_2", widget: "text" }
+              - { label: "Takeaway 3", name: "takeaway_3", widget: "text" }
+
+          # ANONYMOUS
+          - label: "11 - Anonymous Messages"
+            name: "anonymous"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Intro", name: "intro", widget: "text" }
+              - label: "Messages"
+                name: "messages"
+                widget: "list"
+                fields:
+                  - { label: "Text", name: "text", widget: "string" }
+                  - { label: "Highlight", name: "highlight", widget: "boolean", default: false }
