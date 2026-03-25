@@ -811,18 +811,24 @@ function renderPage(c) {
   }, { threshold: 0 });
   if (heroEl) tocShowObserver.observe(heroEl);
 
-  // Track which section is active
-  const tocObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const id = entry.target.id;
-        tocDots.forEach(dot => {
-          dot.classList.toggle('active', dot.getAttribute('href') === '#' + id);
-        });
+  // Track which section is active via scroll position
+  function updateActiveTocItem() {
+    const scrollY = window.scrollY + window.innerHeight * 0.3;
+    let activeId = null;
+    for (let i = sections.length - 1; i >= 0; i--) {
+      if (sections[i] && sections[i].offsetTop <= scrollY) {
+        activeId = sections[i].id;
+        break;
       }
-    });
-  }, { threshold: 0.2, rootMargin: '-10% 0px -70% 0px' });
-  sections.forEach(sec => tocObserver.observe(sec));
+    }
+    if (activeId) {
+      tocDots.forEach(dot => {
+        dot.classList.toggle('active', dot.getAttribute('href') === '#' + activeId);
+      });
+    }
+  }
+  window.addEventListener('scroll', updateActiveTocItem, { passive: true });
+  updateActiveTocItem();
 
   // Smooth scroll on TOC click
   tocDots.forEach(dot => {
