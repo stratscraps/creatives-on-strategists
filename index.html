@@ -502,9 +502,90 @@
     flex-shrink: 0;
     margin-left: 16px;
   }
+
+  /* Sticky TOC */
+  .toc {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    opacity: 0;
+    transition: opacity 0.4s;
+    pointer-events: none;
+  }
+
+  .toc.visible {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .toc-dot {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    flex-direction: row-reverse;
+  }
+
+  .toc-dot .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--border);
+    flex-shrink: 0;
+    transition: background 0.3s, transform 0.3s;
+  }
+
+  .toc-dot.active .dot {
+    background: var(--accent);
+    transform: scale(1.4);
+  }
+
+  .toc-dot .toc-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    color: transparent;
+    white-space: nowrap;
+    transition: color 0.2s;
+    text-transform: uppercase;
+  }
+
+  .toc-dot:hover .toc-label,
+  .toc-dot.active .toc-label {
+    color: var(--text-dim);
+  }
+
+  .toc-dot.active .toc-label {
+    color: var(--accent);
+  }
+
+  @media (max-width: 1100px) {
+    .toc { display: none; }
+  }
 </style>
 </head>
 <body>
+
+<nav class="toc" id="toc">
+  <a class="toc-dot" href="#sec-01"><span class="toc-label">Setup</span><span class="dot"></span></a>
+  <a class="toc-dot" href="#sec-02"><span class="toc-label">Headline</span><span class="dot"></span></a>
+  <a class="toc-dot" href="#sec-03"><span class="toc-label">Strategy</span><span class="dot"></span></a>
+  <a class="toc-dot" href="#sec-04"><span class="toc-label">Brief</span><span class="dot"></span></a>
+  <a class="toc-dot" href="#sec-05"><span class="toc-label">Frustrations</span><span class="dot"></span></a>
+  <a class="toc-dot" href="#sec-06"><span class="toc-label">Want More</span><span class="dot"></span></a>
+  <a class="toc-dot" href="#sec-07"><span class="toc-label">Feedback</span><span class="dot"></span></a>
+  <a class="toc-dot" href="#sec-08"><span class="toc-label">After Brief</span><span class="dot"></span></a>
+  <a class="toc-dot" href="#sec-09"><span class="toc-label">Blind Spots</span><span class="dot"></span></a>
+  <a class="toc-dot" href="#sec-10"><span class="toc-label">Paradox</span><span class="dot"></span></a>
+  <a class="toc-dot" href="#sec-11"><span class="toc-label">Anonymous</span><span class="dot"></span></a>
+  <a class="toc-dot" href="#browse-section"><span class="toc-label">Raw Data</span><span class="dot"></span></a>
+</nav>
 
 <div class="container" id="app">
   <p style="color: var(--text-muted); padding: 100px 0; text-align: center;">Loading...</p>
@@ -524,8 +605,7 @@ function renderPage(c) {
   <div class="hero-meta">
     <span class="meta-chip"><strong>106</strong> respondents</span>
     <span class="meta-chip"><strong>85%</strong> creative</span>
-    <span class="meta-chip"><strong>2</strong> waves, 2023-2024</span>
-    <span class="meta-chip"><strong>57%</strong> have 10+ years exp</span>
+<span class="meta-chip"><strong>57%</strong> have 10+ years exp</span>
   </div>
   <a href="${c.hero.survey_url}" target="_blank" class="survey-cta">
     Take the Survey ${ARROW_SVG}
@@ -534,7 +614,7 @@ function renderPage(c) {
 </header>
 
 <!-- SETUP -->
-<section class="fade-in">
+<section class="fade-in" id="sec-01">
   <div class="section-label">01 / The Setup</div>
   <h2>${c.setup.heading}</h2>
   <p>${c.setup.body_1}</p>
@@ -551,7 +631,7 @@ function renderPage(c) {
 </section>
 
 <!-- HEADLINE -->
-<section class="fade-in">
+<section class="fade-in" id="sec-02">
   <div class="section-label">02 / The Headline</div>
   <h2>${c.headline.heading}</h2>
   <p>${c.headline.body_1}</p>
@@ -560,7 +640,7 @@ function renderPage(c) {
 </section>
 
 <!-- PURPOSE -->
-<section class="fade-in">
+<section class="fade-in" id="sec-03">
   <div class="section-label">03 / What Is Strategy For?</div>
   <h2>${c.purpose.heading}</h2>
   <p>${c.purpose.body_1}</p>
@@ -572,7 +652,7 @@ function renderPage(c) {
 </section>
 
 <!-- BRIEF -->
-<section class="fade-in">
+<section class="fade-in" id="sec-04">
   <div class="section-label">04 / The Creative Brief</div>
   <h2>${c.brief.heading}</h2>
   <p>${c.brief.body_1}</p>
@@ -587,7 +667,7 @@ function renderPage(c) {
 </section>
 
 <!-- FRUSTRATIONS -->
-<section class="fade-in">
+<section class="fade-in" id="sec-05">
   <div class="section-label">05 / What Frustrates Creatives</div>
   <h2>${c.frustrations.heading}</h2>
   <p>${c.frustrations.intro}</p>
@@ -611,7 +691,7 @@ function renderPage(c) {
 </section>
 
 <!-- WANT MORE -->
-<section class="fade-in">
+<section class="fade-in" id="sec-06">
   <div class="section-label">06 / What Creatives Want More Of</div>
   <h2>${c.want_more.heading}</h2>
   <div class="chart-container">
@@ -632,7 +712,7 @@ function renderPage(c) {
 </section>
 
 <!-- FEEDBACK -->
-<section class="fade-in">
+<section class="fade-in" id="sec-07">
   <div class="section-label">07 / Feedback</div>
   <h2>${c.feedback.heading}</h2>
   <h3>${c.feedback.least_heading}</h3>
@@ -644,7 +724,7 @@ function renderPage(c) {
 </section>
 
 <!-- AFTER BRIEF -->
-<section class="fade-in">
+<section class="fade-in" id="sec-08">
   <div class="section-label">08 / Life After the Brief</div>
   <h2>${c.after_brief.heading}</h2>
   <p>${c.after_brief.body_1}</p>
@@ -653,7 +733,7 @@ function renderPage(c) {
 </section>
 
 <!-- BLIND SPOTS -->
-<section class="fade-in">
+<section class="fade-in" id="sec-09">
   <div class="section-label">09 / Blind Spots</div>
   <h2>${c.blind_spots.heading}</h2>
   <div class="chart-container">
@@ -668,7 +748,7 @@ function renderPage(c) {
 </section>
 
 <!-- PARADOX -->
-<section class="fade-in">
+<section class="fade-in" id="sec-10">
   <div class="section-label">10 / The Paradox</div>
   <h2>${c.paradox.heading}</h2>
   <p>${c.paradox.body_1}</p>
@@ -682,7 +762,7 @@ function renderPage(c) {
 </section>
 
 <!-- ANONYMOUS -->
-<section class="fade-in">
+<section class="fade-in" id="sec-11">
   <div class="section-label">11 / The Anonymous Messages</div>
   <h2>${c.anonymous.heading}</h2>
   <p class="dim">${c.anonymous.intro}</p>
@@ -716,6 +796,43 @@ function renderPage(c) {
     entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
   }, { threshold: 0.1 });
   document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+  // TOC active section tracking
+  const toc = document.getElementById('toc');
+  const tocDots = toc.querySelectorAll('.toc-dot');
+  const sectionIds = Array.from(tocDots).map(a => a.getAttribute('href').slice(1));
+  const sections = sectionIds.map(id => document.getElementById(id)).filter(Boolean);
+
+  // Show TOC after scrolling past hero
+  const heroEl = document.querySelector('.hero');
+  const tocShowObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      toc.classList.toggle('visible', !entry.isIntersecting);
+    });
+  }, { threshold: 0 });
+  if (heroEl) tocShowObserver.observe(heroEl);
+
+  // Track which section is active
+  const tocObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.id;
+        tocDots.forEach(dot => {
+          dot.classList.toggle('active', dot.getAttribute('href') === '#' + id);
+        });
+      }
+    });
+  }, { threshold: 0.2, rootMargin: '-10% 0px -70% 0px' });
+  sections.forEach(sec => tocObserver.observe(sec));
+
+  // Smooth scroll on TOC click
+  tocDots.forEach(dot => {
+    dot.addEventListener('click', (e) => {
+      e.preventDefault();
+      const target = document.querySelector(dot.getAttribute('href'));
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
 
   // Charts
   Chart.defaults.color = '#888';
