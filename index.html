@@ -7,7 +7,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -19,8 +19,8 @@
     --text: #e5e5e5;
     --text-dim: #888;
     --text-muted: #555;
-    --accent: #f97316;
-    --accent-dim: rgba(249, 115, 22, 0.15);
+    --accent: #f0c7c7;
+    --accent-dim: rgba(240, 199, 199, 0.15);
     --green: #22c55e;
     --red: #ef4444;
     --blue: #3b82f6;
@@ -30,7 +30,7 @@
   body {
     background: var(--bg);
     color: var(--text);
-    font-family: 'Inter', -apple-system, sans-serif;
+    font-family: 'IBM Plex Mono', monospace;
     line-height: 1.7;
     font-size: 17px;
     -webkit-font-smoothing: antialiased;
@@ -97,7 +97,7 @@
     margin-top: 32px;
     padding: 12px 24px;
     background: var(--accent);
-    color: #000;
+    color: #0a0a0a;
     font-weight: 600;
     font-size: 15px;
     border-radius: 8px;
@@ -241,7 +241,7 @@
   }
 
   .tier-1 .tier-badge { background: rgba(239, 68, 68, 0.15); color: var(--red); }
-  .tier-2 .tier-badge { background: rgba(249, 115, 22, 0.15); color: var(--accent); }
+  .tier-2 .tier-badge { background: rgba(240, 199, 199, 0.15); color: var(--accent); }
   .tier-3 .tier-badge { background: rgba(168, 85, 247, 0.15); color: var(--purple); }
   .tier-4 .tier-badge { background: rgba(59, 130, 246, 0.15); color: var(--blue); }
 
@@ -718,14 +718,14 @@ function renderPage(c) {
 
   // Charts
   Chart.defaults.color = '#888';
-  Chart.defaults.font.family = "'Inter', sans-serif";
+  Chart.defaults.font.family = "'IBM Plex Mono', monospace";
   Chart.defaults.plugins.legend.display = false;
 
   new Chart(document.getElementById('experienceChart').getContext('2d'), {
     type: 'doughnut',
     data: {
       labels: ['10+ years', '5-9 years', 'Less than 5 years', 'Not reported'],
-      datasets: [{ data: [34, 15, 11, 46], backgroundColor: ['#f97316', 'rgba(249,115,22,0.6)', 'rgba(249,115,22,0.3)', '#262626'], borderColor: '#0a0a0a', borderWidth: 3 }]
+      datasets: [{ data: [34, 15, 11, 46], backgroundColor: ['#f0c7c7', 'rgba(240,199,199,0.6)', 'rgba(240,199,199,0.3)', '#262626'], borderColor: '#0a0a0a', borderWidth: 3 }]
     },
     options: { responsive: true, maintainAspectRatio: true, cutout: '60%', plugins: { legend: { display: true, position: 'right', labels: { padding: 16, usePointStyle: true, pointStyleWidth: 12, font: { size: 13 } } } } }
   });
@@ -734,7 +734,7 @@ function renderPage(c) {
     type: 'bar',
     data: {
       labels: ['Timeline\\ncompression', 'Executability', 'Client\\npolitics', 'Real human\\nbehavior', 'Service\\nfunction'],
-      datasets: [{ data: [28, 22, 19, 17, 12], backgroundColor: ['#ef4444', '#f97316', '#a855f7', '#3b82f6', '#22c55e'], borderRadius: 6, barThickness: 36 }]
+      datasets: [{ data: [28, 22, 19, 17, 12], backgroundColor: ['#ef4444', '#f0c7c7', '#a855f7', '#3b82f6', '#22c55e'], borderRadius: 6, barThickness: 36 }]
     },
     options: { responsive: true, maintainAspectRatio: true, indexAxis: 'y', scales: { x: { display: false, grid: { display: false } }, y: { grid: { display: false }, ticks: { font: { size: 13 } } } }, plugins: { tooltip: { callbacks: { label: function(ctx) { return ctx.raw + ' mentions'; } } } } }
   });
